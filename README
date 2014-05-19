@@ -1,0 +1,12 @@
+An xcode project version of:
+
+// This example program is created by thecplusplusuy for demonstration purposes. It's a simple 3D model loader (wavefront (.obj)), which is capable to load materials and UV textures:
+// http://www.youtube.com/user/thecplusplusguy
+// Free source, modify if you want, LGPL licence (I guess), I would be happy, if you would not delete the link
+// so other people can see the tutorial
+// this file is third.cpp an example, how to use the class
+
+with some cleanup thrown in.
+
+There's memory stomping going on in the quads path.
+
