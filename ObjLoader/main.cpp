@@ -3,6 +3,7 @@
 // Free source, modify if you want, LGPL licence (I guess), I would be happy, if you would not delete the link
 // so other people can see the tutorial
 // this file is third.cpp an example, how to use the class
+// Modified for migration to SDL2/Linux by SandUhrGucker
 #include <iostream>
 #include "objloader.h"
 
