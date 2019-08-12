@@ -4,7 +4,5 @@ I think he has used a Mac. Because I want to use SDL2 in my Project, i had to mi
 
 So this Repository is is a c++/SDL2 (!) fork for instant use to load and view Alias Wavefront .obj Files.
 
-Hint if you get Memory/Segfaults:
-Pay attention on a corect Blender-Export of your Object- & Material-File!
-If You're still in trouble, take a look at your syslog (/var/log/syslog), and use strace (apt-get install strace)
+Read the Wiki/F.A.Q if you run in tropuble!
 
