@@ -3,6 +3,7 @@
 // Free source, modify if you want, LGPL licence (I guess), I would be happy, if you would not delete the link
 // so other people can see the tutorial
 // this file is the objloader.cpp
+// Modified for migration to SDL2/Linux by SandUhrGucker
 
 #include "objloader.h"
 
