@@ -8,9 +8,9 @@
 #ifndef OBJLOADER_H
 #define OBJLOADER_H
 
-#include <SDL/SDL.h>
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
+#include <SDL2/SDL.h>
+#include <GL/gl.h>
+#include <GL/glu.h>
 #include <cstdlib>
 #include <vector>
 #include <string>
