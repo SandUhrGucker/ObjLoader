@@ -1,4 +1,4 @@
-This is a fork of Chris Rosebrughs awesome ObjeLoader, who have written it in SDL(1) and c++.
+This is a fork of Chris Rosebrughs awesome ObjectLoader, who have written it in SDL(1) and c++.
 He is formerly known as "thecplusplusuy" on Youtube. Watch his Channel! - He is an outstanding c++ Programmer and can explain his code very well!: http://www.youtube.com/user/thecplusplusguy
 I think he has used a Mac. Because I want to use SDL2 in my Project, i had to migrate his code, and modify it a little to also work on Linux. Also I added a Makefile for simpler compiling (with g++).
 
