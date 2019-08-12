@@ -10,14 +10,14 @@
 #include <SDL/SDL.h>
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
-// #include <cstdlib>
+#include <cstdlib>
 #include <vector>
 #include <string>
-// #include <algorithm>
+#include <algorithm>
 #include <fstream>
-// #include <cstdio>
+#include <cstdio>
 #include <iostream>
-
+using namespace std;
 // This struct contain 3 floats and a constructor, it's used for vertexes and normal vectors
 struct coordinate{
 	float x,y,z;
