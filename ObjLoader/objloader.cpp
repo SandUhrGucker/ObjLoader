@@ -65,6 +65,7 @@ texcoord::texcoord(float a,float b) {
 }
 
 int objloader::load(const char* filename) {
+	using namespace std;
 	std::ifstream in(filename);	// open the model file
 
 	if (!in.is_open()) {
