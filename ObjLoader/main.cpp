@@ -20,7 +20,7 @@ void init() {
 	glMatrixMode(GL_MODELVIEW);
 	glEnable(GL_DEPTH_TEST);
 
-	shape = loader.load("i5.obj");
+	shape = loader.load("i5.obj"); // this is a hardcoded filename. Change it to your needs!
 
 	glEnable(GL_LIGHTING);
 	glEnable(GL_LIGHT0);
@@ -42,13 +42,24 @@ void display() {
 #include <dlfcn.h>  // to make it work on mac
 int main(int argc,char** argv) {
 	SDL_Init(SDL_INIT_EVERYTHING);
-     
+    /*
+    // maybe needed unser Mac, but for Linux its poison!
     void* cocoa_lib=dlopen( "/System/Library/Frameworks/Cocoa.framework/Cocoa", RTLD_LAZY );
     void (*nsappload)(void);
     nsappload = (void(*)()) dlsym( cocoa_lib, "NSApplicationLoad");
     nsappload();
-    
-	SDL_Surface* screen=SDL_SetVideoMode(640,480,32,SDL_SWSURFACE|SDL_OPENGL);
+    */
+	//SDL_Surface* screen=SDL_SetVideoMode(640,480,32,SDL_SWSURFACE|SDL_OPENGL);
+	SDL_Window* window;
+	SDL_Renderer* screen;
+	window = SDL_CreateWindow("SDL_RenderClear",
+                        SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED,
+                        640, 480,
+                        0);
+	screen = SDL_CreateRenderer(window, -1, 0);
+	SDL_SetRenderDrawColor(screen, 0, 0, 0, 255);
+	SDL_RenderClear(screen);
+	
 	bool running=true;
 	Uint32 start;
 	SDL_Event event;
@@ -67,7 +78,8 @@ int main(int argc,char** argv) {
 		}
 
 		display();
-		SDL_GL_SwapBuffers();
+		//SDL_GL_SwapBuffers();
+		SDL_RenderPresent(screen);
 
 		if (1000/30>(SDL_GetTicks()-start)) {
 			SDL_Delay(1000/30-(SDL_GetTicks()-start));
